@@ -112,7 +112,7 @@
             @forelse($informasi as $info)
                 <div class="solution-card d-flex flex-column latest-gallery-card">
                     <div class="solution-image">
-                        <img src="{{ !empty($info->gambar) ? asset('uploads/'.$info->gambar) : asset('images/placeholder.jpg') }}" alt="{{ $info->judul }}" loading="lazy">
+                        <img src="{{ !empty($info->gambar) ? secure_asset('uploads/'.$info->gambar) : secure_asset('images/placeholder.jpg') }}" alt="{{ $info->judul }}" loading="lazy">
                     </div>
                     <div class="solution-content d-flex flex-column flex-grow-1">
                         <div class="gallery-meta d-flex justify-content-between flex-wrap">

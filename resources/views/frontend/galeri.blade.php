@@ -112,7 +112,7 @@
                      onclick="openLightbox({{ $loop->index }})" 
                      style="cursor: pointer; --index: {{ $loop->index }};">
                     <div class="solution-image">
-                        <img src="{{ asset('uploads/'.$gallery->gambar) }}" alt="{{ $gallery->judul }}" loading="lazy">
+                        <img src="{{ secure_asset('uploads/'.$gallery->gambar) }}" alt="{{ $gallery->judul }}" loading="lazy">
                             </div>
                     <div class="solution-content d-flex flex-column flex-grow-1">
                         <div class="gallery-meta d-flex justify-content-between flex-wrap">
@@ -979,7 +979,7 @@ const galleryData = [
     @foreach($data as $item)
     {
         id: {{ $item->id_galeri }},
-        image: "{{ asset('uploads/'.$item->gambar) }}",
+        image: "{{ secure_asset('uploads/'.$item->gambar) }}",
         title: "{{ addslashes($item->judul) }}",
         category: "{{ addslashes($item->kategori->nama_kategori ?? 'Umum') }}",
         date: "{{ \Carbon\Carbon::parse($item->tanggal_upload)->format('d M Y') }}",

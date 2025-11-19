@@ -108,7 +108,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="solution-card d-flex flex-column latest-gallery-card">
                         <div class="solution-image">
-                            <img src="{{ asset('uploads/' . $galeri->gambar) }}" alt="{{ $galeri->judul }}">
+                            <img src="{{ secure_asset('uploads/' . $galeri->gambar) }}" alt="{{ $galeri->judul }}">
                         </div>
                         <div class="solution-content d-flex flex-column flex-grow-1">
                             <div class="gallery-meta mb-3 d-flex justify-content-between flex-wrap">
@@ -151,7 +151,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="solution-card d-flex flex-column latest-gallery-card">
                         <div class="solution-image">
-                            <img src="{{ !empty($info->gambar) ? asset('uploads/'.$info->gambar) : asset('images/placeholder.jpg') }}" alt="{{ $info->judul }}">
+                            <img src="{{ !empty($info->gambar) ? secure_asset('uploads/'.$info->gambar) : secure_asset('images/placeholder.jpg') }}" alt="{{ $info->judul }}">
                         </div>
                         <div class="solution-content d-flex flex-column flex-grow-1">
                             <div class="gallery-meta mb-3 d-flex justify-content-between flex-wrap">
