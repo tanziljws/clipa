@@ -44,7 +44,7 @@
             <tr>
                 <td class="cell-title">{{ $item->judul }}</td>
                 <td>
-                    <img src="{{ asset('uploads/'.$item->gambar) }}" class="thumb" alt="{{ $item->judul }}">
+                    <img src="{{ secure_asset('uploads/'.$item->gambar) }}" class="thumb" alt="{{ $item->judul }}">
                 </td>
                 <td>
                     @if(isset($item->kategori))

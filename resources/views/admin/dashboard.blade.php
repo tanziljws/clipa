@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @push('styles')
-    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/dashboard.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')

@@ -32,7 +32,7 @@
             @if(!empty($data->gambar))
                 <div class="mt-2">
                     <small class="text-muted d-block">Gambar saat ini:</small>
-                    <img src="{{ asset('uploads/'.$data->gambar) }}" alt="{{ $data->judul }}" style="width:140px; height: 100px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.1);">
+                    <img src="{{ secure_asset('uploads/'.$data->gambar) }}" alt="{{ $data->judul }}" style="width:140px; height: 100px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.1);">
                 </div>
             @endif
         </div>

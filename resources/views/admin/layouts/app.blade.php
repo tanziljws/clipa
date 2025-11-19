@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="{{ secure_asset('css/dashboard.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         :root {
             --primary-color: #0f4c75;
@@ -377,7 +377,7 @@
         <div class="d-flex align-items-center justify-content-between p-4 border-bottom border-white border-opacity-20">
             <div class="logo-container">
                 <div class="logo">
-                    <img src="{{ asset('/images/logo.png') }}" alt="Bellford Academy Logo" style="max-width: 100%; height: auto;">
+                    <img src="{{ secure_asset('/images/logo.png') }}" alt="Bellford Academy Logo" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="sidebar-text">
                     <h4 class="m-0">Bellford Academy</h4>

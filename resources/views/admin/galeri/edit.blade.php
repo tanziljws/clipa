@@ -11,7 +11,7 @@
         <div class="mb-3">
             <label>Gambar</label>
             <input type="file" name="gambar" class="form-control">
-            <img src="{{ asset('uploads/'.$data->gambar) }}" width="100" class="mt-2">
+            <img src="{{ secure_asset('uploads/'.$data->gambar) }}" width="100" class="mt-2">
         </div>
         <div class="mb-3">
             <label>Kategori</label>
